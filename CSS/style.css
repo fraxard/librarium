@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap');
+
+::selection {
+    background: rgb(9, 132, 132);
+    color: white;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+#mainPage{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+}
+#nav1{
+    width: 100vw;
+    height: 10vh;
+    /* background-color: ; */
+    border-bottom: 1px solid rgb(173, 173, 173);
+    display: flex;
+    padding-left: 170px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav1 a{
+    font-family: 'Dancing Script';
+    color: black;
+    text-decoration: none;
+    font-size: 45px;
+}
+#nav1 p{
+    font-family: 'Acme';
+    font-size: 22px;
+    padding-right: 140px;
+}
+#nav2{
+    /* background-color: #d1d1d1; */
+    width: 100vw;
+    height: 12vh;
+    align-items: center;
+    display: flex;
+}
+#nav2 #link1{
+    display: flex;
+    width: 70vw;
+    margin-left: 15vw ;
+    margin-right: 15vw;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#nav2 #link1 a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Playwrite VN', serif;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s;
+}
+#nav2 #link1 a:hover{
+    color: #E28D20;
+    font-weight: 400;
+    border-bottom: 2px solid teal;
+}
+#cartIcon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+#midPart{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+}
+#desc{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: red; */
+}
+#desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #572605;
+}
+#desc #descHead{
+    font-family: 'Dancing Script';
+    font-size: 45px;
+    /* background-color: red; */
+    /* align-items: center; */
+    color: wheat;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10vh;
+}
+#desc h3{
+    font-family: 'Playwrite VN', serif;
+    font-size: 14px;
+    margin-top: 1vh;
+    color: wheat;
+    /* margin-bottom: 1vh; */
+    border: 1px solid teal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-radius: 80%;
+    transition: all 0.2s;
+}
+#desc h3:hover{
+    cursor: pointer;
+    color: #E28D20;
+}
+#desc p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, serif;
+    font-size: 14px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5vh;
+    color: wheat;
+    text-align: justify;
+}
+#desc p span{
+    background-color: #b36a0b;
+}
+#rightCol{
+    width: 30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
+#imgdiv1{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 100px; */
+    overflow: hidden;
+}
+#rightCol img{
+    width: 30vw;
+    padding-bottom: 100px;
+}
+#copyR{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* Login Page */
+.login-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #572605;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.login-form h2 {
+    font-family: 'Dancing Script';
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #572605;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Playwrite VN', serif;
+    margin-bottom: 0.4rem;
+    color: #572605;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: system-ui, sans-serif;
+    transition: border-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #E28D20;
+}
+
+.form-group .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 33px;
+    cursor: pointer;
+    color: #666;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #E28D20;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Playwrite VN', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+}
+
+.login-btn:hover {
+    background-color: #b36a0b;
+    transform: translateY(-2px);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.form-footer a {
+    color: #E28D20;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #b36a0b;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.forgot-password a {
+    font-size: 0.8rem;
+    color: #666;
+    text-decoration: none;
+    font-family: system-ui, sans-serif;
+}
+
+.forgot-password a:hover {
+    color: #E28D20;
+}
+
+@media (max-width: 500px) {
+    .login-form {
+        padding: 1.5rem;
+    }
+    
+    .login-form h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+/* Signup Page Styles */
+.signup-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #572605;
+    padding: 20px;
+}
+
+.signup-form {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.signup-form h2 {
+    font-family: 'Dancing Script';
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #572605;
+}
+
+.form-columns {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-column {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 0.9rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Playwrite VN', serif;
+    margin-bottom: 0.3rem;
+    color: #572605;
+    font-size: 0.85rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: system-ui, sans-serif;
+    transition: border-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #E28D20;
+}
+
+.form-group .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.password-strength {
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    color: #666;
+    font-family: system-ui, sans-serif;
+}
+
+.password-strength-meter {
+    height: 3px;
+    background-color: #ddd;
+    border-radius: 2px;
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+
+.password-strength-meter div {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.form-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.signup-btn {
+    width: 50%;
+    padding: 0.7rem;
+    background-color: #E28D20;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Playwrite VN', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.signup-btn:hover {
+    background-color: #b36a0b;
+    transform: translateY(-2px);
+}
+
+.signup-btn:active {
+    transform: translateY(0);
+}
+
+.form-footer {
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.form-footer a {
+    color: #E28D20;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #b36a0b;
+}
+
+@media (max-width: 640px) {
+    .form-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .signup-form {
+        padding: 1.5rem;
+    }
+    
+    .signup-form h2 {
+        font-size: 2rem;
+    }
+
+    .signup-btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* catalogue page CSS */
+.catalogue-container {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #572605;
+    padding: 2rem;
+}
+
+.category-filter {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-filter h3 {
+    font-family: 'Dancing Script';
+    font-size: 1.8rem;
+    color: #572605;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #E28D20;
+    background-color: transparent;
+    color: #E28D20;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Playwrite VN', serif;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: #E28D20;
+    color: white;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book-details {
+    padding: 1rem;
+}
+
+.book-details h4 {
+    font-family: 'Playwrite VN', serif;
+    font-size: 1.2rem;
+    color: #572605;
+    margin-bottom: 0.5rem;
+}
+
+.book-details p {
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.price {
+    font-size: 1.1rem !important;
+    color: #E28D20 !important;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #E28D20;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Playwrite VN', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #b36a0b;
+}
+
+@media (max-width: 768px) {
+    .catalogue-container {
+        padding: 1rem;
+    }
+    
+    .books-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.cart-container {
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #572605;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #E28D20;
+    margin-bottom: 1rem;
+}
+
+.cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.cart-container th, .cart-container td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+    font-family: 'Playwrite VN', serif;
+}
+
+.cart-container th {
+    background-color: #E28D20;
+    color: white;
+}
+
+.cart-container td button {
+    background-color: #E28D20;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cart-container td button:hover {
+    background-color: #b36a0b;
+}
+
+.cart-summary {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #572605;
+}
+
+#checkoutBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+#checkoutBtn:hover {
+    background-color: #388E3C;
+}

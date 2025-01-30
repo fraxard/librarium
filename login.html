@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Librarium</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+    <div id="mainPage">
+        <div id="nav1">
+            <a href="index.html" id="logoname">Librarium</a>
+            <p id="websiteName">Librarium : United College of Engineering and Research</p>
+        </div>
+        <div id="nav2">
+            <div id="link1">
+                <a href="index.html" class="linkof1">Home</a>
+                <a href="login.html" class="linkof1">Login</a>
+                <a href="signup.html" class="linkof1">Registration</a>
+                <a href="catalogue.html" class="linkof1">Catalogue</a>
+                <a href="cart.html" class="linkof1"><i class="ri-shopping-cart-line" id="cartIcon"></i>Cart</a>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+                        <i class="ri-eye-line password-toggle"></i>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                    <div class="form-footer">
+                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="copyR">
+            <p>&copy; 2025 Librarium ; Ayush Kushwaha</p>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>

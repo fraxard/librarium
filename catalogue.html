@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Librarium</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+    <div id="mainPage" style="overflow-x: hidden;">
+        <div id="nav1">
+            <a href="index.html" id="logoname">Librarium</a>
+            <p id="websiteName">Librarium : United College of Engineering and Research</p>
+        </div>
+        <div id="nav2">
+            <div id="link1">
+                <a href="index.html" class="linkof1">Home</a>
+                <a href="login.html" class="linkof1">Login</a>
+                <a href="signup.html" class="linkof1">Registration</a>
+                <a href="catalogue.html" class="linkof1">Catalogue</a>
+                <a href="cart.html" class="linkof1" style="position: relative;"><i class="ri-shopping-cart-line" id="cartIcon"></i>Cart</a>
+            </div>
+        </div>
+        
+        <div class="catalogue-container">
+            <div class="category-filter">
+                <h3>Categories</h3>
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="all">All Books</button>
+                    <button class="category-btn" data-category="cs">Computer Science</button>
+                    <button class="category-btn" data-category="ece">Electronics</button>
+                    <button class="category-btn" data-category="arts">Arts</button>
+                    <button class="category-btn" data-category="science">Science</button>
+                </div>
+            </div>
+            
+            <div class="books-grid">
+                <!-- Sample Book Cards -->
+                <div class="book-card" data-category="cs">
+                    <img src="Images/71Y67UzW5GL.webp" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Clean Code</h4>
+                        <p class="author">Robert C. Martin</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹599</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="ece">
+                    <img src="Images/digital-design-moris-mano-550x550h.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Digital Electronics</h4>
+                        <p class="author">Morris Mano</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹499</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="book-card" data-category="ece">
+                    <img src="Images/SATELLITE-Communication.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Satelllite Communication</h4>
+                        <p class="author">Dr. L Balaji</p>
+                        <p class="publisher">ARS Publications</p>
+                        <p class="price">₹499</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="arts">
+                    <img src="Images/9780205744220.PE.0.l.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Art History</h4>
+                        <p class="author">Marilyn Stokstad</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹799</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="book-card" data-category="arts">
+                    <img src="Images/719WTtlFxTL._AC_UF1000,1000_QL80_.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Into the Library</h4>
+                        <p class="author">Lorem ipsum</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹799</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="book-card" data-category="science">
+                    <img src="Images/41iD516KBiL._SL500_.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>The Science of systems</h4>
+                        <p class="author">David Shughar</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹999</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="book-card" data-category="cs">
+                    <img src="Images/shopping.webp" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>The C</h4>
+                        <p class="author">Dennis M. Ritchie</p>
+                        <p class="publisher">Pearson</p>
+                        <p class="price">₹762</p>
+                        <button class="add-to-cart-btn">
+                            <i class="ri-shopping-cart-line"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyR">
+            <p>&copy; 2025 Librarium ; Ayush Kushwaha</p>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
